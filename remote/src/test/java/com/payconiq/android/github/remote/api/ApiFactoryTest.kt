@@ -1,5 +1,6 @@
 package com.payconiq.android.github.remote.api
 
+import com.payconiq.android.github.remote.BuildConfig
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import io.mockk.MockKAnnotations
@@ -54,7 +55,10 @@ class ApiFactoryTest {
         service.test()
 
         val request = mockServer.takeRequest()
-
-        Assert.assertTrue(request.getHeader("Authorization")?.contains("Basic ") == true)
+        if (BuildConfig.GITHUB_USERNAME.isNotEmpty() && BuildConfig.GITHUB_PASSWORD.isNotEmpty()) {
+            Assert.assertTrue(request.getHeader("Authorization")?.contains("Basic ") == true)
+        } else {
+            Assert.assertEquals(request.getHeader("Authorization"), null)
+        }
     }
 }

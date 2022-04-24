@@ -15,7 +15,7 @@ object BuildConfiguration {
 }
 
 fun getEnvProperty(properties: Properties, name: String): String =
-    properties.getProperty(name)
+    System.getenv(name) ?: properties.getProperty(name)
     ?: error("Unable to get $name from Environment Variables or local.properties")
 
 fun getOptionalEnvProperty(
