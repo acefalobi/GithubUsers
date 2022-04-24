@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_connection">
+        Couldn\'t connect to the server. Please check your internet connection and try again.
+    </string>
+
+    <string name="error_request">
+        There was an error with your request. Please try again later or contact support.
+    </string>
+</resources>

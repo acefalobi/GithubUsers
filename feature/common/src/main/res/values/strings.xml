@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Errors -->
+    <string name="error_generic">An unexpected error occurred.</string>
+    <string name="error_no_users">No users were found.</string>
+
+    <!-- Actions -->
+    <string name="action_retry">Retry</string>
+    <string name="action_back">Back</string>
+    <string name="action_search">Search</string>
+    <string name="action_share_profile">Share Profile</string>
+    <string name="action_open_in_github">Open In Github</string>
+
+    <!-- Labels -->
+    <string name="label_popular">Popular</string>
+    <string name="label_following">Following</string>
+    <string name="label_followers">Followers</string>
+    <string name="label_gists">Gists</string>
+    <string name="label_repos">Repos</string>
+
+    <!-- Prompt -->
+    <string name="prompt_search">Enter a username to search…</string>
+
+    <!-- Templates -->
+    <string name="template_share_profile">Check out %s\'s profile on Github at %s</string>
+</resources>
