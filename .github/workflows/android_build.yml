@@ -20,24 +20,12 @@ jobs:
 
       - name: Run Spotless Apply
         run: ./gradlew spotlessApply
-        env:
-          GITHUB_USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Run Spotless Check
         run: ./gradlew spotlessCheck
-        env:
-          GITHUB_USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Run Tests
         run: ./gradlew testDebugUnitTest
-        env:
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-          GITHUB_PASSWORD: ${{ secrets.GITHUB_PASSWORD }}
 
       - name: Build Project
         run: ./gradlew assembleDebug
-        env:
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-          GITHUB_PASSWORD: ${{ secrets.GITHUB_PASSWORD }}
