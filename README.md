@@ -1,12 +1,19 @@
 # Android Github Users with Jetpack Compose.
 
-# TODO
+## Features
+
+- View popular Github users
+- Search for users
+- View user details
+- View user followers and following list
+
+## TODO
 
 - Add local layer to store and then display recent search terms.
 - Add UI tests.
 - Move keys to generated C++ file for better security.
 
-# Setup (Optional)
+## Setup (Optional)
 
 - Add your Github username and access
   token ([you can create on here](https://github.com/settings/tokens)) to your system variables or
