@@ -10,7 +10,7 @@ import com.squareup.moshi.Json
  */
 @Keep
 data class UserDetailRemote(
-    override val name: String,
+    override val name: String?,
 
     @Json(name = "login")
     override val username: String,
